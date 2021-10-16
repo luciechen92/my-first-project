@@ -1,4 +1,4 @@
-package test.servlet;
+
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -8,21 +8,25 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class testServlet
+ * Servlet implementation class test1
  */
-@WebServlet("/testServlet")
-public class testServlet extends HttpServlet {
+@WebServlet("/test1")
+public class test1 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-    
-    public testServlet() {
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public test1() {
         super();
-        
+        // TODO Auto-generated constructor stub
     }
 
-	
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
+		// TODO Auto-generated method stub
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 
